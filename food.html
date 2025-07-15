@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SA-Flavor-Finder</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+  <section class="hero is-primary" style="background-image: url('assets/images/SA SkyLine.jpg')">
+    <p id="HeroTitle"><strong>Welcome to SA-Flavor-Finder</strong></p>
+    <p class="subtitle1"><strong>Discover the Best Local Dining Spots for an Authentic Experience</strong></p>
+    <div class="hero-body"></div>
+  </section>
+
+  <div class="columns">
+    <div class="column is-one-fifth">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">           
+             <button id = "la panaderia" class="img"><img src="assets/images/la-panaderia.jpg"onclick="location.href='https://lapanaderia.com/';"></button>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <em>La Panadería</em> in San Antonio blends Mexican baking traditions with modern flavors, offering artisanal bread, pastries, and savory delights.
+            <br>
+            <a href="https://twitter.com/breadcultura">La Panaderia</a>
+            <br>
+            <i class="fa fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-one-fifth">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <button id = "curry-boys-bbq" class="img"><img src="./assets/images/curry-boys-bbq"onclick="location.href='https://www.curryboysbbq.com/';"></button>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+            </div>
+          </div>
+          <div class="content">
+            <em>Curry Boys BBQ</em> in San Antonio, Texas, is a culinary gem known for its mouthwatering barbecue dishes and Texas hospitality. A must-visit!
+            <br>
+            <a href="https://www.yelp.com/biz/curry-boys-bbq-san-antonio-2">Curry Boys-BBQ</a>
+            <br>
+            <i class="fa fa-yelp"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-one-fifth">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <button id = "zataar" class="img"><img src="./assets/images/zataar.jpeg"onclick="location.href='https://gozaatar.com/';"></button>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+            </div>
+          </div>
+          <div class="content">
+            <em>Zaatar Lebanese Restaurant</em> in San Antonio, Texas, offers a delightful taste of Lebanon with its authentic cuisine and warm hospitality. Explore Lebanese flavors!
+            <br>
+            <a href="https://www.yelp.com/biz/zaatar-lebanese-grill-san-antonio">Zaatar Lebanese</a>
+            <br>
+            <i class="fa fa-yelp"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column is-one-fifth">
+      <div class="card">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <button id = "simis" class="img"><img src="./assets/images/simis.jpg"onclick="location.href='https://www.facebook.com/profile.php?id=100064028920187';"></button>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+              </div>
+            </div>
+            <div class="content">
+              <em>Simi's Indian Cuisine</em> in San Antonio, Texas, invites you on a flavorful journey through India
+              with authentic dishes and warm hospitality. <br>
+              <a href="https://www.yelp.com/biz/simis-india-cuisine-san-antonio">Simis Indian Cuisine</a>
+              <br>
+              <i class="fa fa-yelp"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-one-fifth">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <button id = "pollos norte" class="img"><img src="./assets/images/pollos.jpg"onclick="location.href='https://www.polloslosnortenos.com/';"></button>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+            </div>
+          </div>
+          <div class="content">
+            <em>Pollos Asados Los Nortenos</em> in San Antonio, Texas, is a local gem renowned for its delicious grilled chicken and Mexican flavors.
+            <br>
+            <a href="https://www.yelp.com/biz/pollos-asados-los-norte%C3%B1os-san-antonio">Pollos Nortenos</a>
+            <br>
+            <i class="fa fa-yelp"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-one-fifth">
+                <div class="card">
+                    <!-- created seperate card for my search bar -->
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+          <div class="colum is-one-third">
+            <h2>Previous Nutrition Data</h2>
+            <p>Food Name: <span id="foodName"></span></p>
+            <p>Calories: <span id="calories"></span></p>
+            <p>Protien: <span id="protein"></span></p>
+            <p>Sugar: <span id="sugar"></span></p>
+            
+          </div>
+            <div class="column is-one-half">
+                <div class="field">
+                    <label class="label">Nutrition</label>
+                    <div class="control">
+                        <input id="foodSearch" class="input" type="text" placeholder="Search for nutrition">
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+              <br>
+              <br>
+                <button id="searchBtn" class="button is-primary"><strong>Search</strong></button>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-one-fifth">
+                <p id="nutrition"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <button id="reset" onclick="location.href='index.html';">Reset</button>
+        <h3 id="us">Get to know us!</h3>
+        <a href="https://github.com/AnthonyStrickland">Anthony Strickland</a> |
+        <a href="https://github.com/joellopez95">Joel Lopez</a> |
+        <a href="https://github.com/mcalvario">Maribel Calvario</a>
+      </p>
+      <p>
+        <a href="https://twitter.com/your-twitter-profile">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://github.com/joellopez95/SA-Flavor-Finder">
+          <i class="fa fa-github" style="font-size:24px"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/your-linkedin-profile">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
